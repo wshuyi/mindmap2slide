@@ -5,7 +5,6 @@ import os
 import shutil
 import datetime
 from PIL import Image
-import basic_path_loader
 
 def prepare_export_dir(revealjs_preview_dir, revealjs_export_dir):
     if not os.path.exists(revealjs_export_dir):
@@ -17,10 +16,6 @@ def prepare_export_dir(revealjs_preview_dir, revealjs_export_dir):
     revealjs_runtime = revealjs_preview_dir + '/reveal.js'
     cmd = '/usr/bin/rsync -av "{}" "{}"'.format(revealjs_runtime, revealjs_export_dir)
     os.system(cmd)
-    # for math equation support:
-    # mathjax_compact_dir = revealjs_preview_dir + '/mathjax-compact'
-    # cmd = '/usr/bin/rsync -av "{}" "{}"'.format(mathjax_compact_dir, revealjs_export_dir)
-    # os.system(cmd)
 
 def convert_media_links_export_repo(slide_html_file, export_html_file):
 
@@ -74,8 +69,6 @@ def change_md_to_slide_md(infile, slide_md_file):
     # change title line from h1 to title
     regex = r"^# (.*)"
     title = re.match(regex, data, flags=re.MULTILINE).group(1)
-    #print title
-    #print check_contain_chinese(title)
 
     now = datetime.datetime.now()
     if check_contain_chinese(title): #contains chinese characters in title:
@@ -89,8 +82,6 @@ def change_md_to_slide_md(infile, slide_md_file):
         author = ""
         date = now.strftime("%b %Y")
         end_string = "\n\n## {}\n\n{}".format("The End", "Thanks for your time!")
-    #print(author)
-    #print(date)
     subst = "% \\1\\n% {}\\n% {}".format(author, date)
     data = re.sub(regex, subst, data, 0, re.MULTILINE)
     # change h2 title to h1 title
@@ -108,7 +99,6 @@ def change_md_to_slide_md(infile, slide_md_file):
     # make background images to separate slide
     regex = r"^ *!\[.*\]\((.*)\)"
     subst = "\n\n##  {data-background-image=\"\\1\" data-background-size=\"contain\"}"
-    #subst = "<section id=\"section\" class=\"slide level2\" data-background-image=\"\\1\" data-background-size=\"contain\"><h2></h2></section>"
     data = re.sub(regex, subst, data, 0, re.MULTILINE)
     # make video links to separate video slide
     regex = r"^ *\[video\]\((.*)\)"
@@ -125,16 +115,10 @@ def change_md_to_slide_md(infile, slide_md_file):
     # resize inline images
     regex = r"^[\*-] +<img src=\"(.*?)\".*"
     links = re.findall(regex, data, re.MULTILINE)
-    #print(links)
     for link in links:
-        #print(link)
         with Image.open(link) as im:
             width, height = im.size
-        #print width
-        #print height
         if height>width and height>400:
-            #print "need to resize"
-            #regex = r"^(.*" + link + r".*)>"
             regex = r"^(.*" + link + r".*?alt=\".*?\").*?>"
             subst = "\\1 height=\"400\">"
             data = re.sub(regex, subst, data, 0, re.MULTILINE)
@@ -191,13 +175,15 @@ def make_mathjax_compact_work(slide_html_file):
         f.write(data)
 
 def main(argv):
-    basic_path_json = basic_path_loader.get_basic_path()
+    working_dir = os.path.dirname(os.path.realpath(__file__))
+    output_dir = working_dir + "/temp"
+    temp_md_file = output_dir + "/temp.md"
+    local_repo_path = output_dir + "/repo"
 
-    infile = basic_path_json["output_dir"] + "/temp.md"
-    # infile = basic_path_json["temp_markdown"]
-    local_repo_path = basic_path_json["output_dir"] + "/repo"
-    revealjs_preview_dir = basic_path_json["revealjs_preview_dir"]
-    revealjs_export_dir = basic_path_json["revealjs_export_dir"]
+    infile = temp_md_file
+
+    revealjs_preview_dir = working_dir + "/slide_temp"
+    revealjs_export_dir = working_dir + "/export"
     # 1st step: convert the markdown file to a pandoc revealjs ready markdown file
     # put the file in the directory revealjs_preview_dir
     slide_md_file = revealjs_preview_dir + '/slide.md'

@@ -2,7 +2,6 @@ import sys
 import re
 import os
 import datetime
-import basic_path_loader
 
 def convert_pic_links_local_repo(infile, outfile, local_repo_path):
 
@@ -32,11 +31,9 @@ def convert_pic_links_local_repo(infile, outfile, local_repo_path):
     # get links again, this time only absolute links
     links = re.findall(r'\!\[.*\]\((.*)\)', data)
 
-    # print(links)
     special_character_list = [" ", "&", "%20"]
 
     for link in links:
-        # print(link)
         # handle the Untitled image link from notions, hosted on amazon
         regex_notion_untitled = r"^http.+amazonaws.*/Untitled"
         # handle the Dragged Image from Ulysses
@@ -80,9 +77,7 @@ def sync_pics_to_local_repo(infile, link_key_pairs, local_repo_path):
     links = link_key_pairs.iterkeys()
 
     for link in links:
-        # print(link)
         if web_link_pattern.search(link): # is a web link
-            # print("{} is a web link".format(link))
 
             out_image_filename = link_key_pairs[link]
             cmd = '/usr/local/bin/wget -c -O {}/{} {}'.format(local_repo_path, out_image_filename, link)
@@ -142,12 +137,11 @@ def handle_blank_lines_between_list_items(infile, outfile):
         f.write(data)
 
 def main(argv):
-    basic_path_json = basic_path_loader.get_basic_path()
     num_vars = len(argv)
-
-    outfile = basic_path_json["output_dir"] + "/temp.md"
-    local_repo_path = basic_path_json["output_dir"] + "/repo"
-    output_dir = basic_path_json["output_dir"]
+    working_dir = os.path.dirname(os.path.realpath(__file__))
+    output_dir = working_dir + "/temp"
+    outfile = output_dir + "/temp.md"
+    local_repo_path = output_dir + "/repo"
 
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
