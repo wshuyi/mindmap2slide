@@ -126,6 +126,16 @@ def handle_separated_image_link(infile, outfile):
     with open(outfile, 'w') as f:
         f.write(data)
 
+def handle_blank_title(infile, outfile):
+    # blank title created by mindnode or mistakenly by hand
+    with open(infile) as f:
+        data = f.read()
+    regex = r"^#+ *$"
+    subst = ""
+    data = re.sub(regex, subst, data, 0, re.MULTILINE)
+    with open(outfile, 'w') as f:
+        f.write(data)
+
 def handle_blank_lines_between_list_items(infile, outfile):
     with open(infile) as f:
         data = f.read()
@@ -160,7 +170,7 @@ def main(argv):
         link_key_pairs = convert_pic_links_local_repo(infile, outfile, local_repo_path)
         links = link_key_pairs.iterkeys()
         sync_pics_to_local_repo(infile, link_key_pairs, local_repo_path)
-
+        handle_blank_title(outfile, outfile)
         handle_vvv_video_tags(outfile, outfile)
         handle_blank_lines_between_list_items(outfile, outfile)
         handle_separated_image_link(outfile, outfile)
