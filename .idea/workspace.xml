@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be4e4e5e-ae58-48fe-8f61-e2edd53dbe1b" name="Default" comment="" />
+    <list default="true" id="be4e4e5e-ae58-48fe-8f61-e2edd53dbe1b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/Dutch.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/French.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/German.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/Italian.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/Japanese.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/Spanish.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/ar.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/ca.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/cs.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/da.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/el.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/es_419.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/fi.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/he.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/hr.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/hu.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/id.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/ko.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/ms.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/no.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/pl.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/pt.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/pt_PT.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/ro.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/ru.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/sk.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/sv.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/th.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/tr.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/uk.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mindmap2slide.app/Contents/Resources/vi.lproj/ApplicationStub.nib" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,12 +46,12 @@
     <SUITE FILE_PATH="coverage/mindmap2slide$markdown_user_interface.coverage" NAME="markdown_user_interface Coverage Results" MODIFIED="1505459051510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="markdown_user_interface.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/markdown_user_interface.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="696">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -27,7 +60,7 @@
       <file leaf-file-name="local_markdown_to_revealjs.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/local_markdown_to_revealjs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4">
+            <state relative-caret-position="29">
               <caret line="89" column="24" lean-forward="false" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
               <folding>
                 <element signature="e#14#24#0" expanded="true" />
@@ -80,8 +113,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="996" />
+    <option name="width" value="1440" />
+    <option name="height" value="828" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -101,6 +134,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,8 +161,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -198,10 +231,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="996" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="828" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.259375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34583333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -260,6 +293,60 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/markdown_user_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_markdown_to_revealjs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2436">
+          <caret line="89" column="24" lean-forward="false" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
+          <folding>
+            <element signature="e#14#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markdown_user_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_markdown_to_revealjs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2436">
+          <caret line="89" column="24" lean-forward="false" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
+          <folding>
+            <element signature="e#14#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markdown_user_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_markdown_to_revealjs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2436">
+          <caret line="89" column="24" lean-forward="false" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
+          <folding>
+            <element signature="e#14#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/convert-markdown-to-local-repo-markdown.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4872">
@@ -353,7 +440,7 @@
     <entry file="file://$PROJECT_DIR$/markdown_user_interface.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="696">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -362,13 +449,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
           <caret line="2" column="86" lean-forward="false" selection-start-line="2" selection-start-column="86" selection-end-line="2" selection-end-column="86" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local_markdown_to_revealjs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
+        <state relative-caret-position="29">
           <caret line="89" column="24" lean-forward="false" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
           <folding>
             <element signature="e#14#24#0" expanded="true" />
