@@ -76,23 +76,23 @@ This is a tool for converting textbundle (exported from Mindnode) to Reveal.js S
 
 ## Anaconda
 
-​请到[这个网址](https://www.continuum.io/downloads) 下载最新版的Anaconda。下拉页面，找到下载位置。根据你目前使用的系统，网站会自动推荐给你适合的版本下载。
+请到[这个网址](https://www.continuum.io/downloads) 下载最新版的Anaconda。下拉页面，找到下载位置。根据你目前使用的系统，网站会自动推荐给你适合的版本下载。
 
 ![](http://oejqwrqkh.bkt.clouddn.com/64542-6625b7e0024c086a.jpeg)
 
 请注意，下载页面区隔出左右两栏，分别对应套件不同的Python语言版本。左侧是3.6版，右侧是2.7版。请**务必选择**2.7版本，不然后面的流程可能会出现报错。
 
-​下载下来的文件是个以pkg作为扩展名的包裹，双击它，然后根据提示一步步安装就好了。全中文界面，非常友好。
+下载下来的文件是个以pkg作为扩展名的包裹，双击它，然后根据提示一步步安装就好了。全中文界面，非常友好。
 
 ![](http://oejqwrqkh.bkt.clouddn.com/64542-d29552c8fe444e7e.jpeg)
 
 ## Pandoc
 
-请到[这个网址](https://github.com/jgm/pandoc/releases/tag/1.19.2.1)下载Pandoc工具。
+请到[这个网址](https://github.com/jgm/pandoc/releases)下载Pandoc工具。
 
 ![](http://oejqwrqkh.bkt.clouddn.com/64542-7f847c83e4d562f7.jpg)
 
-下载其中的[pkg扩展名安装包](https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-osx.pkg)。
+下载其中的pkg扩展名安装包。
 
 下载好后双击pkg文件安装，方式与Anaconda大同小异，此处就不重复了。
 

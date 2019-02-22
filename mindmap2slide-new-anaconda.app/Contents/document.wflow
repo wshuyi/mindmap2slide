@@ -59,7 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>~/anaconda/bin/python ~/Downloads/mindmap2slide-master/markdown_user_interface.py revealjs "$1"</string>
+					<string>~/anaconda2/bin/python ~/Downloads/mindmap2slide-master/markdown_user_interface.py revealjs "$1"</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
